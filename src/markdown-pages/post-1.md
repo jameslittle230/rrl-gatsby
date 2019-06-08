@@ -1,7 +1,6 @@
 ---
-path: "/asdf"
-date: "2019-05-04"
-title: "My first blog post"
+path: "/markdown"
+title: "About Us"
 ---
 
 Hey there, this is some *markdown.*
