@@ -13,7 +13,7 @@ const AboutPage = () => (
     <p>Welcome to the office of Drs. Roth, Rotter, and Laster.</p>
 
     <DoctorCard name="Sally S. Roth, MD" image="roth.jpg">
-      <p>Dr. Roth is a graduate of Smith College and Case Western Reserve Medical School. She trained at Yale New Haven Hospital, completed a fellowship in Ambulatory Pediatrics and was on the Pediatric Faculty at the University of Florida. She is Board Certified in Pediatrics. </p>
+      <p>Dr. Roth is a graduate of Smith College and Case Western Reserve Medical School. She trained at Yale New Haven Hospital, completed a fellowship in Ambulatory Pediatrics and was on the Pediatric Faculty at the University of Florida. She is Board Certified in Pediatrics.</p>
     </DoctorCard>
     
     <DoctorCard name="Sari J. Rotter, MD" image="rotter.jpg">
