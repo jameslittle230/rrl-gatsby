@@ -5,6 +5,7 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 import DoctorCard from "../components/doctorcard"
 import StaffCard from "../components/staffcard"
+import Grid from "../components/grid"
 
 const AboutPage = () => (
   <Layout>
@@ -26,10 +27,12 @@ const AboutPage = () => (
 
     <h2>Our Office Staff</h2>
 
-    <StaffCard name="Linda Diaz" year="1991" image="linda.jpg" />
-    <StaffCard name="Lin Kenney" year="1995" image="lin.jpg" />
-    <StaffCard name="Melissa Moroney-Barzey" year="1999" image="melissa.jpg" />
-    <StaffCard name="Courtney Ferretti" year="2018" image="courtney.jpg" />
+    <Grid columns="4">
+      <StaffCard name="Linda Diaz" year="1991" image="linda.jpg" />
+      <StaffCard name="Lin Kenney" year="1995" image="lin.jpg" />
+      <StaffCard name="Melissa Moroney-Barzey" year="1999" image="melissa.jpg" />
+      <StaffCard name="Courtney Ferretti" year="2018" image="courtney.jpg" />
+    </Grid>
   </Layout>
 )
 
