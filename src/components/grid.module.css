@@ -7,4 +7,6 @@
 .grid > * {
     flex-grow: 0;
     flex-shrink: 0;
+    padding: 0.5em;
+    margin-bottom: 1em;
 }

@@ -27,7 +27,11 @@ const AboutPage = () => (
 
     <h2>Our Office Staff</h2>
 
-    <Grid columns="4">
+    <Grid columns={{
+      "0px": 1,
+      "480px": 2,
+      "800px": 4,
+    }}>
       <StaffCard name="Linda Diaz" year="1991" image="linda.jpg" />
       <StaffCard name="Lin Kenney" year="1995" image="lin.jpg" />
       <StaffCard name="Melissa Moroney-Barzey" year="1999" image="melissa.jpg" />
