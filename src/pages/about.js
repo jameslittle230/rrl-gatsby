@@ -29,8 +29,8 @@ const AboutPage = () => (
 
     <Grid columns={{
       "0px": 1,
-      "480px": 2,
-      "800px": 4,
+      "450px": 2,
+      "650px": 4,
     }}>
       <StaffCard name="Linda Diaz" year="1991" image="linda.jpg" />
       <StaffCard name="Lin Kenney" year="1995" image="lin.jpg" />
