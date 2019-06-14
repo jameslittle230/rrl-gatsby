@@ -1,9 +1,9 @@
 import { Link } from "gatsby"
 import PropTypes from "prop-types"
 import React from "react"
-import { Location } from '@reach/router';
 import styles from "./header.module.css"
 import layoutStyles from "./layout.module.css"
+import NavListItem from "./navListItem";
 
 const Header = ({ siteTitle }) => (
   <React.Fragment>
@@ -14,24 +14,18 @@ const Header = ({ siteTitle }) => (
       <p>(617) 232-2811</p>
     </header>
 
-    <Location>
-    {({ location })=> {
-      console.log(location.pathname)
-    }}
-    </Location>
-
     <nav className={styles.nav + ' ' + layoutStyles.nav}>
       <ul>
-        <li><Link to="/">Home</Link></li>
-        <li><Link to="/about">About Us</Link></li>
-        <li><Link to="/appointments">Appointments</Link></li>
-        <li className={styles.active}><Link to="/how-to-reach">How to Reach your Pediatrician</Link></li>
-        <li><Link to="/emergencies-after-hours">Emergencies &amp; After Hours</Link></li>
-        <li><Link to="/new-patient">New Patient Information</Link></li>
-        <li><Link to="/resources">Forms &amp; Resources</Link></li>
-        <li><Link to="/policies">Office Policies</Link></li>
-        <li><Link to="/insurance">Insurance &amp; Payments</Link></li>
-        <li><Link to="/referrals">Referrals</Link></li>
+        <NavListItem to="/">Home</NavListItem>
+        <NavListItem to="/about">About Us</NavListItem>
+        <NavListItem to="/appointments">Appointments</NavListItem>
+        <NavListItem to="/how-to-reach">How to Reach your Pediatrician</NavListItem>
+        <NavListItem to="/emergencies-after-hours">Emergencies &amp; After Hours</NavListItem>
+        <NavListItem to="/new-patient">New Patient Information</NavListItem>
+        <NavListItem to="/resources">Forms &amp; Resources</NavListItem>
+        <NavListItem to="/policies">Office Policies</NavListItem>
+        <NavListItem to="/insurance">Insurance &amp; Payments</NavListItem>
+        <NavListItem to="/referrals">Referrals</NavListItem>
       </ul>
     </nav>
   </React.Fragment>
