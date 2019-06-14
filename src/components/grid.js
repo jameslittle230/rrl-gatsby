@@ -13,12 +13,11 @@ class Grid extends React.Component {
             let percentage = 100 * (1 / value ) + "%"
             css += `@media only screen and (min-width: ${breakpoint}) {
                 .${styles.grid} > * {
-                    flex-basis: ${percentage}
+                    flex-basis: calc(${percentage} ${this.props.gutter ? `- ${this.props.gutter}` : ``})
                 }
             }`
         }
-        console.log(css)
-        console.log(styles)
+
         return (
             <React.Fragment>
                 <style>{ css }</style>

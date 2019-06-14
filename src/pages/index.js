@@ -24,8 +24,8 @@ const IndexPage = () => (
 
     <Grid columns={{
       '0px': 1,
-      '300px': 2,
-    }}>
+      '500px': 2,
+    }} gutter="5px">
       <NewsBox title="Immunization Corner">
         <p>Immunizations are the greatest advance in history for protecting our children. We are proud to have a nearly 100% vaccination rate for all of our patients for all of the recommended vaccines. We are happy to make an appointment for your child’s seasonal flu vaccine or any routine vaccine. We are dedicated to to keeping your child protected and up to date with immunizations. </p>
       </NewsBox>
