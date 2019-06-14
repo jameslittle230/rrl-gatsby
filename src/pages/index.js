@@ -7,12 +7,17 @@ import SEO from "../components/seo"
 import Grid from "../components/grid"
 import NewsBox from "../components/newsbox"
 
-import styles from "./index.css"
-
 const IndexPage = () => (
   <Layout>
     <SEO title="Home" />
-    <Image alt="The facade of 637 Washington Street" filename="building-c.jpg" />
+    <div style={{
+      maxWidth: `450px`,
+      width: `100%`,
+      margin: `0 auto`,
+      boxShadow: `0 0 20px hsla(0, 0%, 0%, 0.6)`
+    }}>
+      <Image alt="The facade of 637 Washington Street" filename="building-c.jpg" />
+    </div>
     <p>Welcome to the office of Drs. Roth, Rotter, and Laster. We are 3 pediatricians in a small, private practice in Brookline, Massachusetts and we are dedicated to taking excellent and personal care of our patients. We are all Board Certified by the American Board of Pediatrics. We are affiliated with Boston Children's Hospital and are proud members of the PPOC (Pediatric Physicians Organization at Children's), Boston Children's Hospital's only preferred primary care provider network.</p>
     <h2>Why Choose Us?</h2>
     <p>Our patients choose us because they know they will get excellent medical care in a personalized office. We have access to the most up to date pediatric information in the country through our strong affiliation with Boston Children’s Hospital, and in our intimate office setting we can easily maintain close, long term health relationships with our families.</p>
@@ -30,10 +35,9 @@ const IndexPage = () => (
       </NewsBox>
     </Grid>
     
-    <section class="logos">
-    <Image alt="Drs. Roth, Rotter and Laster are preferred Boston Children's Hospital Community of Care members." 
-    filename="ppoc.jpg" />
-    </section>
+    <div style={{boxShadow: `0 0 20px hsla(0, 0%, 0%, 0.6)`}}>
+      <Image alt="Drs. Roth, Rotter and Laster are preferred Boston Children's Hospital Community of Care members." filename="ppoc.jpg" />
+    </div>
   </Layout>
 )
 
