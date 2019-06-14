@@ -29,6 +29,7 @@
 .nav {
     float: left;
     text-align: right;
+    padding-top: 1rem;
 }
 
 .nav ul {
@@ -40,6 +41,8 @@
 .nav li {
     padding: 0.5em 1rem 0.5em 0;
     font-size: 1.2em;
+    border: 1px solid transparent;
+    border-right: none;
 }
 
 .nav a {
@@ -47,13 +50,12 @@
     text-decoration: none;
 }
 
-.nav a:hover {
+.nav a:hover, nav li.active a {
     font-weight: bold;
     text-decoration: underline;
 }
 
 .nav li.active {
     background: #EAEAEA;
-    border: 1px solid #979797;
-    border-right: none;
+    border-color: #979797;
 }
