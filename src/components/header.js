@@ -1,34 +1,37 @@
 import { Link } from "gatsby"
 import PropTypes from "prop-types"
 import React from "react"
+import { Location } from '@reach/router';
 
 const Header = ({ siteTitle }) => (
-  <header
-    style={{
-      background: `rebeccapurple`,
-      marginBottom: `1.45rem`,
+  <React.Fragment>
+    <header>
+      <h1>Drs. Roth, Rotter &amp; Laster</h1>
+      <p>637 Washington Street • Suite 202 • Brookline MA 02446</p>
+      <p>(617) 232-2811</p>
+    </header>
+
+    <Location>
+    {({ location })=> {
+      console.log(location.pathname)
     }}
-  >
-    <div
-      style={{
-        margin: `0 auto`,
-        maxWidth: 960,
-        padding: `1.45rem 1.0875rem`,
-      }}
-    >
-      <h1 style={{ margin: 0 }}>
-        <Link
-          to="/"
-          style={{
-            color: `white`,
-            textDecoration: `none`,
-          }}
-        >
-          {siteTitle}
-        </Link>
-      </h1>
-    </div>
-  </header>
+    </Location>
+
+    <nav>
+      <ul>
+        <li><Link to="/">Home</Link></li>
+        <li><Link to="/about">About Us</Link></li>
+        <li><Link to="/appointments">Appointments</Link></li>
+        <li><Link to="/how-to-reach">How to Reach your Pediatrician</Link></li>
+        <li><Link to="/emergencies-after-hours">Emergencies &amp; After Hours</Link></li>
+        <li><Link to="/new-patient">New Patient Information</Link></li>
+        <li><Link to="/resources">Forms &amp; Resources</Link></li>
+        <li><Link to="/policies">Office Policies</Link></li>
+        <li><Link to="/insurance">Insurance &amp; Payments</Link></li>
+        <li><Link to="/referrals">Referrals</Link></li>
+      </ul>
+    </nav>
+  </React.Fragment>
 )
 
 Header.propTypes = {
