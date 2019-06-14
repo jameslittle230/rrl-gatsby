@@ -26,7 +26,7 @@ const Layout = ({ children }) => (
     `}
     render={data => (
       <div className={layoutStyles.gridContainer}>
-        <Header siteTitle={data.site.siteMetadata.title} />
+        <Header />
         <main 
           className={layoutStyles.main}
           style={{

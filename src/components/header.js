@@ -1,11 +1,10 @@
 import { Link } from "gatsby"
-import PropTypes from "prop-types"
 import React from "react"
 import styles from "./header.module.css"
 import layoutStyles from "./layout.module.css"
 import NavListItem from "./navListItem";
 
-const Header = ({ siteTitle }) => (
+const Header = () => (
   <React.Fragment>
     <div className={styles.headerBackground + ' ' + layoutStyles.headerBackground} />
     <header className={styles.header + ' ' + layoutStyles.header}>
@@ -30,13 +29,5 @@ const Header = ({ siteTitle }) => (
     </nav>
   </React.Fragment>
 )
-
-Header.propTypes = {
-  siteTitle: PropTypes.string,
-}
-
-Header.defaultProps = {
-  siteTitle: ``,
-}
 
 export default Header
