@@ -8,6 +8,7 @@
 import React from "react"
 import PropTypes from "prop-types"
 import { StaticQuery, graphql } from "gatsby"
+import { Helmet } from "react-helmet"
 
 import Header from "./header"
 import "./baseline.css"
@@ -26,6 +27,9 @@ const Layout = ({ children }) => (
     `}
     render={data => (
       <div className={layoutStyles.gridContainer}>
+        <Helmet>
+          <link href="https://fonts.googleapis.com/css?family=Cabin:400,700|Lato:400,700&display=swap" rel="stylesheet" /> 
+        </Helmet>
         <Header />
         <main 
           className={layoutStyles.main}
@@ -36,7 +40,7 @@ const Layout = ({ children }) => (
             padding: `2em`,
             borderRadius: `1rem 1rem 0 0`,
             fontSize: `1.1em`,
-            fontFamily: `sans-serif`,
+            fontFamily: `Lato`
           }}
         >{children}</main>
         <footer 

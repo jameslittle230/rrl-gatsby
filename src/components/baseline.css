@@ -185,10 +185,11 @@ textarea {
   font: inherit;
 }
 html {
-  font: 120%/1.45em;
+  line-height: 1.45;
   box-sizing: border-box;
   overflow-y: scroll;
 }
+
 * {
   box-sizing: inherit;
 }
@@ -200,6 +201,57 @@ html {
 }
 
 body {
-  font-family: "Cabin Condensed";
-  background-color: #B2C2D5;
+  font-family: "Cabin";
+  background-color: #b2c2d5;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  clear: both;
+  margin-bottom: 0.4em;
+  margin-top: 1.3em;
+  font-family: "Cabin";
+}
+
+p {
+  margin-top: 0;
+}
+
+/* p + p {
+  margin-top: 1.5em;
+} */
+
+iframe {
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.6);
+  margin: 1em 0;
+}
+
+dt {
+  float: left;
+  clear: left;
+  width: 9rem;
+  text-align: right;
+  font-weight: bold;
+}
+
+dt:after {
+  content: ":";
+}
+
+dd {
+  margin: 0 0 0 9.5rem;
+  padding: 0 0 0.5em;
+}
+
+hr {
+  clear: both;
+  margin-top: 1.3rem;
+  border: 0;
+  height: 1px;
+  background: #333;
+  background-image: linear-gradient(to right, #ccc, #333, #ccc);
 }
