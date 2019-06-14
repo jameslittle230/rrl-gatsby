@@ -1,0 +1,59 @@
+.header {
+  font-family: "Cabin Condensed";
+  padding: 2em 100px 0;
+}
+
+.headerBackground {
+  background-image: linear-gradient(
+    127deg,
+    #ffffff 0%,
+    #90d2fa 55%,
+    #8d7eca 100%
+  );
+  border-bottom: 2px solid #243964;
+  box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.5);
+}
+
+.header p {
+    margin: 0;
+    font-size: 1.5em;
+}
+
+.header h1 {
+    margin: 0;
+    margin-bottom: 0.2em;
+    line-height: 1;
+    font-size: 3em;
+}
+
+.nav {
+    float: left;
+    text-align: right;
+}
+
+.nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav li {
+    padding: 0.5em 1rem 0.5em 0;
+    font-size: 1.2em;
+}
+
+.nav a {
+    color: black;
+    text-decoration: none;
+}
+
+.nav a:hover {
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.nav li.active {
+    background: #EAEAEA;
+    border: 1px solid #979797;
+    border-right: none;
+}

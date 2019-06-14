@@ -10,7 +10,8 @@ import PropTypes from "prop-types"
 import { StaticQuery, graphql } from "gatsby"
 
 import Header from "./header"
-import "./layout.css"
+import "./baseline.css"
+import layoutStyles from "./layout.module.css"
 
 const Layout = ({ children }) => (
   <StaticQuery
@@ -24,24 +25,33 @@ const Layout = ({ children }) => (
       }
     `}
     render={data => (
-      <>
+      <div className={layoutStyles.gridContainer}>
         <Header siteTitle={data.site.siteMetadata.title} />
-        <div
+        <main 
+          className={layoutStyles.main}
           style={{
-            margin: `0 auto`,
-            maxWidth: 960,
-            padding: `0px 1.0875rem 1.45rem`,
-            paddingTop: 0,
+            background: `#FFFFFF`,
+            border: `2px solid #474747`,
+            boxShadow: `0 2px 4px 0 rgba(0,0,0,0.50), 0 2px 25px 0 rgba(0,0,0,0.50)`,
+            padding: `2em`,
+            borderRadius: `1rem 1rem 0 0`,
+            fontSize: `1.1em`,
+            fontFamily: `sans-serif`,
           }}
-        >
-          <main>{children}</main>
-          <footer>
-            © {new Date().getFullYear()}, Built with
-            {` `}
-            <a href="https://www.gatsbyjs.org">Gatsby</a>
-          </footer>
-        </div>
-      </>
+        >{children}</main>
+        <footer 
+          className={layoutStyles.footer}
+          style={{
+            fontSize: `0.8em`,
+            marginTop: `1rem`,
+            paddingRight: `1rem`,
+            textAlign: `right`
+          }}>
+          Website Design © {new Date().getFullYear()} James Little<br />
+          Content © {new Date().getFullYear()} Sally Roth, Sari Rotter, Susan Laster<br />
+          Photos by Sari Rotter & Bill Gardner
+        </footer>
+      </div>
     )}
   />
 )
