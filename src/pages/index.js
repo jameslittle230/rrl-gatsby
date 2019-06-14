@@ -13,7 +13,7 @@ const IndexPage = () => (
     <div style={{
       maxWidth: `450px`,
       width: `100%`,
-      margin: `0 auto`,
+      margin: `0 auto 1rem`,
       boxShadow: `0 0 20px hsla(0, 0%, 0%, 0.6)`
     }}>
       <Image alt="The facade of 637 Washington Street" filename="building-c.jpg" />
@@ -35,7 +35,12 @@ const IndexPage = () => (
       </NewsBox>
     </Grid>
     
-    <div style={{boxShadow: `0 0 20px hsla(0, 0%, 0%, 0.6)`}}>
+    <div style={{
+      boxShadow: `0 0 20px hsla(0, 0%, 0%, 0.6)`,
+      maxWidth: `450px`,
+      width: `100%`,
+      margin: `3rem auto 0`
+    }}>
       <Image alt="Drs. Roth, Rotter and Laster are preferred Boston Children's Hospital Community of Care members." filename="ppoc.jpg" />
     </div>
   </Layout>

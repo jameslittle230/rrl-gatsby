@@ -10,7 +10,7 @@
       hsla(202, 58%, 31%, 1) 100%
     );
 
-    box-shadow: 0 2px 2px $gray;
+    box-shadow: 0 2px 2px hsla(0, 0%, 0%, 0.2);
     color: hsla(0, 0%, 100%, 0.97);
     padding: 1rem;
     text-shadow: 2px 2px 2px hsla(0, 0%, 0%, 0.6);
