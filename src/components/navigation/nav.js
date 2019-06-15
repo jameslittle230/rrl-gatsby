@@ -1,5 +1,4 @@
 import React from "react"
-import { Link } from "gatsby"
 import styles from "./nav.module.css"
 import layoutStyles from "../layout.module.css"
 import NavListItem from "./navListItem"

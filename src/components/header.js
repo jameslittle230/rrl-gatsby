@@ -1,9 +1,7 @@
-import { Link } from "gatsby"
 import React from "react"
 import styles from "./header.module.css"
 import layoutStyles from "./layout.module.css"
 import Nav from "./navigation/nav"
-import NavListItem from "./navigation/navListItem";
 
 const Header = () => (
   <React.Fragment>
