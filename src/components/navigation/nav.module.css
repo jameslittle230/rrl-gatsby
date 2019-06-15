@@ -31,6 +31,10 @@
     border-color: #979797;
 }
 
+.togglebutton {
+    display: none;
+}
+
 @media (max-width: 820px) and (min-width: 601px) {
     .nav {
         text-align: center;
@@ -52,27 +56,81 @@
     }
 }
 
-
 @media (max-width: 600px) {
+    .togglebutton {
+        display: block;
+        border: none;
+        color: white;
+        border-radius: 50%;
+        background: none;
+        cursor: pointer;
+    }
+
+    .togglebuttonoutside {
+        background: hsla(0, 0%, 10%, 1);
+        border: 2px solid hsla(0, 0%, 80%, 1);
+        box-shadow: 0 0 4px hsla(0, 0%, 0%, 0.85),
+            0 0 28px hsla(0, 0%, 0%, 0.4);
+        width: 4.25em;
+        height: 4.25em;
+        position: relative;
+        bottom: 2.5em;
+        left: 2.5em;
+        grid-area: 3 / 1 / 4 / 2;
+        z-index: 10;
+    }
+
     .nav {
         text-align: left;
         position: fixed;
-        top: 0; left: 0; bottom: 0; right: 0;
+        top: -4px; left: -4px; bottom: -4px; right: -4px;
         background: hsla(0, 0%, 0%, 0.85);
+        backdrop-filter: blur(4px);
         overflow-y: scroll;
-        font-size: 1.3rem;
+        font-size: 2.9vh; /* Will roughly make it so that the thing will always take up the screen */
         text-shadow: 0 0 2px 1px hsla(0, 0%, 0%, 1);
         padding: 3vh 3vw;
         font-weight: bold;
-        /* COMMENT THIS OUT EVENTUALLY */
+        z-index: 100;
+    }
+
+    .nav.open {
+        animation: show 0.3s ease-out 1 both;
+    }
+
+    .nav.open li {
+        animation: slideover 0.5s ease-out 1 both;
+    }
+
+    .nav.closed {
         display: none;
+        pointer-events: none;
+    }
+
+    .nav.closing {
+        animation: hide 0.5s ease-out calc(0.07s*8) 1 both;
+    }
+
+    .nav.closing li {
+        animation: slideout 0.5s ease-out 1 both;
     }
     
     .nav li {
         display: block;
-        padding: 0 1rem;
-        margin: 1em 0;
+        padding: 0 0.3em;
+        margin: 0.7em 0;
     }
+
+    .nav li:nth-of-type(1) {animation-delay: calc(0.07s * 1)}
+    .nav li:nth-of-type(2) {animation-delay: calc(0.07s * 2)}
+    .nav li:nth-of-type(3) {animation-delay: calc(0.07s * 3)}
+    .nav li:nth-of-type(4) {animation-delay: calc(0.07s * 4)}
+    .nav li:nth-of-type(5) {animation-delay: calc(0.07s * 5)}
+    .nav li:nth-of-type(6) {animation-delay: calc(0.07s * 6)}
+    .nav li:nth-of-type(7) {animation-delay: calc(0.07s * 7)}
+    .nav li:nth-of-type(8) {animation-delay: calc(0.07s * 8)}
+    .nav li:nth-of-type(9) {animation-delay: calc(0.07s * 9)}
+    .nav li:nth-of-type(10) {animation-delay: calc(0.07s * 10)}
 
     .nav li.active {
         background:  hsla(0, 0%, 100%, 0.85);
@@ -89,4 +147,36 @@
         color: hsla(0, 0%, 100%, 1);
         text-decoration: none;
     }
+}
+  
+@keyframes slideover {
+    0% {
+        transform: translateX(-20px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0px);
+        opacity: 1;
+    }
+}
+
+@keyframes slideout {
+    0% {
+        transform: translateX(0px);
+        opacity: 1;
+    }
+    100% {
+        transform: translateX(-20px);
+        opacity: 0;
+    }
+}
+
+@keyframes hide {
+    0% {opacity: 1;}
+    100% {opacity: 0;}
+}
+
+@keyframes show {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
 }
