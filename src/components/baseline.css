@@ -233,30 +233,31 @@ p {
   margin-top: 0;
 }
 
-/* p + p {
-  margin-top: 1.5em;
-} */
-
 iframe {
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.6);
   margin: 1em 0;
 }
 
 dt {
-  float: left;
-  clear: left;
-  width: 9rem;
-  text-align: right;
   font-weight: bold;
 }
 
-dt:after {
-  content: ":";
-}
+@media (min-width: 600px) {
+  dt {
+    float: left;
+    clear: left;
+    width: 9rem;
+    text-align: right;
+  }
 
-dd {
-  margin: 0 0 0 9.5rem;
-  padding: 0 0 0.5em;
+  dt:after {
+    content: ":";
+  }
+
+  dd {
+    margin: 0 0 0 9.5rem;
+    padding: 0 0 0.5em;
+  }
 }
 
 hr {
