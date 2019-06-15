@@ -87,7 +87,7 @@
         background: hsla(0, 0%, 0%, 0.85);
         backdrop-filter: blur(4px);
         overflow-y: scroll;
-        font-size: 2.9vh; /* Will roughly make it so that the thing will always take up the screen */
+        font-size: 2.7vh; /* Will roughly make it so that the thing will always take up the screen */
         text-shadow: 0 0 2px 1px hsla(0, 0%, 0%, 1);
         padding: 3vh 3vw;
         font-weight: bold;
