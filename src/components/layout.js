@@ -40,7 +40,7 @@ const Layout = ({ children }) => (
             padding: `2em`,
             borderRadius: `1rem 1rem 0 0`,
             fontSize: `1.1em`,
-            fontFamily: `Lato`
+            fontFamily: `Lato, sans-serif`
           }}
         >{children}</main>
         <footer 

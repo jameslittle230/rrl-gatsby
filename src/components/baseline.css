@@ -201,7 +201,7 @@ html {
 }
 
 body {
-  font-family: "Cabin";
+  font-family: "Cabin", sans-serif;
   background-color: #b2c2d5;
 }
 
@@ -226,7 +226,7 @@ h6 {
   clear: both;
   margin-bottom: 0.4em;
   margin-top: 1.3em;
-  font-family: "Cabin";
+  font-family: "Cabin", sans-serif;
 }
 
 p {
