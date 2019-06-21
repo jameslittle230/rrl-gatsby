@@ -12,17 +12,17 @@ const ResourcesPage = () => (
     <p>The following are forms regarding medical care. This information does not replace actual medical advice as given by a professional and is not specific to any one child or any one medical situation.</p>
 
     <ul>
-        <li><a href="/resources/fever.pdf">Fever</a></li>
-        <li><a href="/resources/vomit-diarrhea.pdf">Vomiting and Diarrhea</a></li>
-        <li><a href="/resources/stomach-bugs.pdf">How to Prevent Stomach Bugs</a></li>
-        <li><a href="/resources/drug-dosing.pdf">Dosing for over-the-counter medications. Includes:</a>
+        <li><a href="https://files.rothrotterlaster.com/fever.pdf">Fever</a></li>
+        <li><a href="https://files.rothrotterlaster.com/vomit-diarrhea.pdf">Vomiting and Diarrhea</a></li>
+        <li><a href="https://files.rothrotterlaster.com/stomach-bugs.pdf">How to Prevent Stomach Bugs</a></li>
+        <li><a href="https://files.rothrotterlaster.com/drug-dosing.pdf">Dosing for over-the-counter medications. Includes:</a>
             <ul>
                 <li>Tylenol (Acetaminophen)</li>
                 <li>Advil/Motrin (Ibuprofen)</li>
                 <li>Benadryl (Diphenhydramine)</li>
             </ul>
         </li>
-        <li><a href="/resources/add-checklist.pdf">ADHD Diagnostic Checklist</a></li>
+        <li><a href="https://files.rothrotterlaster.com/add-checklist.pdf">ADHD Diagnostic Checklist</a></li>
     </ul>
 
     <h2>Well Visit Forms</h2>
@@ -36,11 +36,11 @@ const ResourcesPage = () => (
     <h3>Downloadable Forms</h3>
 
     <ul>
-        <li><a href="/resources/new-patient.pdf">New Patient Information Form</a></li>
-        <li><a href="/resources/family-history.pdf">Family History Form</a></li>
-        <li><a href="/resources/general-consent.pdf">General Consent Form</a></li>
-        <li><a href="/resources/privacy-summary.pdf">Notice of Privacy Practices</a></li>
-        <li><a href="/resources/teen-consent.pdf">Adolescent Consent to Share Medical Information with Guardian or Parent</a></li>
+        <li><a href="https://files.rothrotterlaster.com/new-patient.pdf">New Patient Information Form</a></li>
+        <li><a href="https://files.rothrotterlaster.com/family-history.pdf">Family History Form</a></li>
+        <li><a href="https://files.rothrotterlaster.com/general-consent.pdf">General Consent Form</a></li>
+        <li><a href="https://files.rothrotterlaster.com/privacy-summary.pdf">Notice of Privacy Practices</a></li>
+        <li><a href="https://files.rothrotterlaster.com/teen-consent.pdf">Adolescent Consent to Share Medical Information with Guardian or Parent</a></li>
     </ul>
   </Layout>
 )
