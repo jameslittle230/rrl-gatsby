@@ -27,5 +27,13 @@ module.exports = {
         icon: `src/images/favicon-master.png`, // This path is relative to the root of the site.
       },
     },
+    {
+      resolve: 'gatsby-plugin-matomo',
+      options: {
+        siteId: '1',
+        matomoUrl: '//analytics.jameslittle.com',
+        siteUrl: '//rothrotterlaster.com'
+      }
+    },
   ],
 }
