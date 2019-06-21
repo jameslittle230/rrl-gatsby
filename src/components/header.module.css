@@ -2,17 +2,37 @@
   font-family: "Cabin", sans-serif;
   padding: 0 100px;
   margin-top: 2em;
+  color: hsl(250, 8%, 14%);
+  position: relative;
+  
+  transition: color 0.2s ease-out;
+}
+
+:global(.dark) .header {
+  color: hsl(250, 8%, 98%);
 }
 
 .headerBackground {
-  background-image: linear-gradient(
-    127deg,
-    #ffffff 0%,
-    #90d2fa 55%,
-    #8d7eca 100%
-  );
   border-bottom: 2px solid #243964;
   box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.5);
+
+  background-image: linear-gradient(
+    127deg,
+    hsl(0, 0%, 100%) 0%,
+    hsl(203, 91%, 77%) 55%,
+    hsl(252, 42%, 64%) 100%
+  );
+}
+
+:global(.dark) .headerBackground {
+  border-color: hsla(0, 100%, 100%, 0.4);
+
+  background-image: linear-gradient(
+    127deg,
+    hsl(153, 6%, 40%) 0%,
+    hsl(203, 91%, 18%) 55%,
+    hsl(252, 42%, 7%) 100%
+  );
 }
 
 .header p {
@@ -41,4 +61,45 @@
     .header {
         font-size: 0.9em;
     }
+}
+
+.darkToggle {
+  border: none;
+  position: absolute;
+  right: 1em;
+
+  width: 4em;
+  height: 2em;
+  border-radius: 1em;
+
+  box-shadow: 0 0 4px hsla(0, 0%, 0%, 0.6), 0 0 25px hsla(0, 0%, 0%, 0.3);
+  transition: box-shadow 0.4s ease, background-color 0.4s ease-out;
+}
+
+.darkToggle span {
+  display: inline-block;
+  background-color: hsla(0, 100%, 100%, 0.35);
+  width: 1.8em;
+  height: 1.8em;
+  line-height: 1.8em;
+  border-radius: 1em;
+  position: absolute;
+  left: 0.1em;
+  top: 0.1em;
+
+  transition: transform 0.4s ease, background-color 0.4s ease-out;
+}
+
+.toggleDark {
+  background: hsla(0, 0%, 0%, 0.6);
+  box-shadow: 0 0 4px hsla(0, 0%, 100%, 0.3), 0 0 25px hsla(0, 0%, 100%, 0.1);
+}
+
+.toggleLight {
+  background: hsla(0, 0%, 100%, 0.6);
+}
+
+.toggleLight span {
+  background: hsla(0, 0%, 0%, 0.6);
+  transform: translateX(2em);
 }

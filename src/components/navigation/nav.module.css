@@ -13,12 +13,17 @@
     padding: 0.5em 1rem 0.5em 0;
     font-size: 1.2em;
     border: 1px solid transparent;
-    border-right: none;
+    border-right-width: 0px;
 }
 
-.nav a {
-    color: black;
+.nav a:link, .nav a:visited {
+    color: hsl(250, 8%, 14%);
     text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+:global(.dark) .nav a:link, :global(.dark) .nav a:visited {
+    color: hsl(250, 8%, 68%);
 }
 
 .nav a:hover, nav li.active a {
@@ -27,8 +32,14 @@
 }
 
 .nav li.active {
-    background: #EAEAEA;
-    border-color: #979797;
+    background: hsla(0, 0%, 100%, 0.8);
+    border-color: hsla(0, 0%, 0%, 0.8);
+    transition: background 0.2s ease, border-color 0.2s ease;
+}
+
+:global(.dark) .nav li.active {
+    background: hsl(250, 8%, 14%);
+    border-color: hsla(0, 0%, 100%, 0.25);
 }
 
 .togglebutton {
@@ -51,7 +62,12 @@
     }
 
     .nav li.active {
-        background: none;
+        background: hsla(0, 0%, 100%, 0.4);
+        border-color: transparent;
+    }
+
+    :global(.dark) .nav li.active {
+        background: hsla(0, 0%, 0%, 0.7);
         border-color: transparent;
     }
 }
@@ -132,18 +148,22 @@
     .nav li:nth-of-type(9) {animation-delay: calc(0.07s * 9)}
     .nav li:nth-of-type(10) {animation-delay: calc(0.07s * 10)}
 
-    .nav li.active {
+    .nav li.active, :global(.dark) .nav li.active {
         background:  hsla(0, 0%, 100%, 0.85);
         border-color: transparent;
         color: black;
     }
 
-    .nav li.active a {
+    /* This selector is some code smell right here! */
+    .nav li.active a:link, 
+    .nav li.active a:visited,
+    :global(.dark) .nav li.active a:link, 
+    :global(.dark) .nav li.active a:visited {
         text-decoration: none;
         color: black;
     }
 
-    .nav a {
+    .nav a:link, .nav a:visited {
         color: hsla(0, 0%, 100%, 1);
         text-decoration: none;
     }

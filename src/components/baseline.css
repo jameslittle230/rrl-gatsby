@@ -277,3 +277,11 @@ hr {
   font-size: 1.2em;
   font-weight: bold;
 }
+
+.dark a:link {
+  color: hsl(199, 81%, 60%);
+}
+
+.dark a:visited {
+  color: hsl(261, 80%, 60%);
+}

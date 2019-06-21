@@ -41,7 +41,7 @@ class Nav extends React.Component {
       <React.Fragment>
         <button className={styles.togglebutton + ' ' + styles.togglebuttonoutside} onClick={this.handleOpenToggle}>
           <svg width="25px" height="25px" viewBox="-7 -7 44 44" style={{transform: `translateY(2px)`}}>
-              <g id="Stuff" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke="#fff" stroke-width="7">
+              <g id="Stuff" fill="none" fillRule="evenodd" strokeLinecap="round" stroke="#fff" strokeWidth="7">
                 <path d="M0,0 L30,0"></path>
                 <path d="M0,15 L30,15"></path>
                 <path d="M0,30 L30,30"></path>
@@ -51,7 +51,7 @@ class Nav extends React.Component {
         <nav className={styles.nav + ' ' + layoutStyles.nav + ' ' + this.getCurrentStateName()}>
           <button className={styles.togglebutton} onClick={this.handleOpenToggle}>
             <svg width="30px" height="30px" viewBox="-7 -7 44 44">
-                <g id="Stuff" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke="#fff" stroke-width="7">
+                <g id="Stuff" fill="none" fillRule="evenodd" strokeLinecap="round" stroke="#fff" strokeWidth="7">
                   <path d="M0,0 L30,30"></path>
                   <path d="M30,0 L0,30"></path>
                 </g>
