@@ -13,9 +13,9 @@ const NewPatientPage = () => (
     <p>On the day of your appointment, please fill out and bring three forms:</p>
 
     <ol>
-        <li><Link to="/resources/new-patient.pdf">New Patient Information Form</Link></li>
-        <li><Link to="/resources/family-history.pdf">Family History Form</Link></li>
-        <li><Link to="/resources/general-consent.pdf">General Consent Form</Link></li>
+        <li><a href="https://files.rothrotterlaster.com/new-patient.pdf">New Patient Information Form</a></li>
+        <li><a href="https://files.rothrotterlaster.com/family-history.pdf">Family History Form</a></li>
+        <li><a href="https://files.rothrotterlaster.com/general-consent.pdf">General Consent Form</a></li>
     </ol>
   </Layout>
 )
