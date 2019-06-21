@@ -6,7 +6,7 @@ import SEO from "../components/seo"
 
 const EmergenciesPage = () => (
   <Layout>
-    <SEO title="About Us" />
+    <SEO title="Emergencies and After Hours" />
     <h1>Emergencies &amp; After Hours</h1>
     <h3>If your child is experiencing a life threatening emergency, please call 911 or go to your nearest Emergency Room.</h3>
     <h2>After Hours Coverage</h2>

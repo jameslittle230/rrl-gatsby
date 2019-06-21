@@ -5,7 +5,7 @@ import SEO from "../components/seo"
 
 const PoliciesPage = () => (
   <Layout>
-    <SEO title="About Us" />
+    <SEO title="Office Policies" />
     <h1>Office Policies</h1>
     <p>Our office policies help us provide excellent and timely care of your child. If you have any questions about our office, please don't hesitate to call us at 617-232-2811.</p>
     <p>1. We care for patients from birth through college graduation. We are happy to make that health journey with our patients into young adulthood.</p>

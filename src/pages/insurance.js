@@ -5,7 +5,7 @@ import SEO from "../components/seo"
 
 const InsurancePage = () => (
   <Layout>
-    <SEO title="About Us" />
+    <SEO title="Insurance" />
     <h1>Insurance</h1>
     <p>The insurance companies stipulate that the office see your child's insurance card at every visit.  If you are unable to show it, they require you to sign a payment waiver in case the insurance coverage is incorrect. We recommend taking a picture of your child’s insurance card on your phone so you have a copy with you at all times.</p>
     <p>We accept most major insurance plans. If you have any questions, please call our office to find out if we accept your insurance.</p>

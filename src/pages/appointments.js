@@ -6,7 +6,7 @@ import SEO from "../components/seo"
 
 const AppointmentsPage = () => (
   <Layout>
-    <SEO title="About Us" />
+    <SEO title="Appointments" />
     <h1>Appointments</h1>
     <p>We are always happy to see your child when you have any concerns. Please call and make an appointment for a visit. While we can’t accept walk-ins, we always have time for scheduled visits. You do not need to check with your child's physician before making an appointment. Our staff is trained to take your call and make an appointment.</p>
     <p><strong>We are available to see patients every day of the year.</strong> We are open for all appointments, 9am-5pm, Monday-Friday, and for urgent medical problems on Saturday, Sunday and holidays.</p>

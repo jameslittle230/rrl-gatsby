@@ -6,7 +6,7 @@ import SEO from "../components/seo"
 
 const HowToReachPage = () => (
   <Layout>
-    <SEO title="About Us" />
+    <SEO title="How to Reach Your Pediatrician" />
     <h1>How to Reach Your Pediatrician</h1>
     <h2>Weekdays: 9am - 5pm</h2>
     <p>To reach your child's pediatrician please call our office at 617-232-2811. Our staff will make an appointment for you or ensure your child’s pediatrician calls you back as soon as possible.</p>

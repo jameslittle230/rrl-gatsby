@@ -5,7 +5,7 @@ import SEO from "../components/seo"
 
 const ReferralsPage = () => (
   <Layout>
-    <SEO title="About Us" />
+    <SEO title="Referrals" />
     <h1>Referrals</h1>
     <p>There are two kinds of referrals:</p>
 

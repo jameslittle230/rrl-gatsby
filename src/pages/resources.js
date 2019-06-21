@@ -5,7 +5,7 @@ import SEO from "../components/seo"
 
 const ResourcesPage = () => (
   <Layout>
-    <SEO title="About Us" />
+    <SEO title="Resources" />
     <h1>Forms &amp; Resources</h1>
     <p>In this section you will find information about specific medical advice for basic problems, information about your child’s well visit form, and miscellaneous forms that you might need to download and print.</p>
     <h2>Medical Information Forms</h2>
