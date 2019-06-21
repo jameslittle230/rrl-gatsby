@@ -19,7 +19,6 @@
 .nav a:link, .nav a:visited {
     color: hsl(250, 8%, 14%);
     text-decoration: none;
-    transition: color 0.2s ease;
 }
 
 :global(.dark) .nav a:link, :global(.dark) .nav a:visited {
@@ -34,7 +33,6 @@
 .nav li.active {
     background: hsla(0, 0%, 100%, 0.8);
     border-color: hsla(0, 0%, 0%, 0.8);
-    transition: background 0.2s ease, border-color 0.2s ease;
 }
 
 :global(.dark) .nav li.active {

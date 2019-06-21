@@ -7,8 +7,6 @@
     border-radius: 1rem 1rem 0 0;
     font-size: 1.1em;
     font-family: "Lato", sans-serif;
-
-    transition: background 0.2s ease-out, color 0.2s ease-out;
 }
 
 :global(.dark) .main {
@@ -25,10 +23,6 @@
 
 :global(.dark) .footer {
     color: hsl(250, 8%, 48%);
-}
-
-.darkBackdrop {
-    transition: background 0.4s ease;
 }
 
 :global(.dark) .darkBackdrop {
