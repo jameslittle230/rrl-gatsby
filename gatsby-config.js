@@ -31,7 +31,7 @@ module.exports = {
       resolve: 'gatsby-plugin-matomo',
       options: {
         siteId: '1',
-        matomoUrl: '//analytics.jameslittle.com',
+        matomoUrl: '//analytics.jameslittle.me',
         siteUrl: '//rothrotterlaster.com'
       }
     },
