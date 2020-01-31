@@ -18,6 +18,9 @@ const IndexPage = () => (
       <Image alt="The facade of 637 Washington Street" filename="building-c.jpg" />
     </div>
     <p>Welcome to the office of Drs. Roth, Rotter, and Laster. We are 3 pediatricians in a small, private practice in Brookline, Massachusetts and we are dedicated to taking excellent and personal care of our patients. We are all Board Certified by the American Board of Pediatrics. We are affiliated with Boston Children's Hospital and are proud members of the PPOC (Pediatric Physicians Organization at Children's), Boston Children's Hospital's only preferred primary care provider network.</p>
+
+    <p><a href="https://mychart.chppoc.org/rrl" class="cta">Patient Portal Login &rarr;</a></p>
+    
     <h2>Why Choose Us?</h2>
     <p>Our patients choose us because they know they will get excellent medical care in a personalized office. We have access to the most up to date pediatric information in the country through our strong affiliation with Boston Children’s Hospital, and in our intimate office setting we can easily maintain close, long term health relationships with our families.</p>
 

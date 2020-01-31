@@ -285,3 +285,28 @@ hr {
 .dark a:visited {
   color: hsl(261, 80%, 75%);
 }
+
+.cta {
+  display: block;
+  padding: 1em;
+  width: 100%;
+  text-align: center;
+  font-weight: bold;
+  background: linear-gradient(to bottom,
+    hsla(202, 58%, 48%, 1) 0%,
+    hsla(202, 58%, 31%, 1) 100%
+  );
+  color: white !important;
+  text-decoration: none;
+}
+
+.cta:hover {
+  background: linear-gradient(to bottom,
+    hsla(202, 58%, 31%, 1) 0%,
+    hsla(202, 58%, 48%, 1) 100%
+  );
+}
+
+.cta:active {
+  background: hsla(202, 58%, 21%, 1);
+}
