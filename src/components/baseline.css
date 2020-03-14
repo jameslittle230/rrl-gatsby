@@ -300,6 +300,37 @@ hr {
   text-decoration: none;
 }
 
+.cta a {
+  color: currentColor
+}
+
+.cta.red {
+  background: linear-gradient(to bottom,
+    rgb(193, 51, 75) 0%,
+    rgb(125, 39, 33) 100%
+  );
+}
+.cta.red:hover {
+  background: linear-gradient(to bottom,
+  rgb(125, 39, 33) 0%,
+    rgb(193, 51, 75) 100%
+  );
+}
+
+.cta {
+  display: block;
+  padding: 1em;
+  width: 100%;
+  text-align: center;
+  font-weight: bold;
+  background: linear-gradient(to bottom,
+    hsla(202, 58%, 48%, 1) 0%,
+    hsla(202, 58%, 31%, 1) 100%
+  );
+  color: white !important;
+  text-decoration: none;
+}
+
 .cta:hover {
   background: linear-gradient(to bottom,
     hsla(202, 58%, 31%, 1) 0%,
