@@ -24,6 +24,7 @@ const ResourcesPage = () => (
         </li>
         <li><a href="https://files.rothrotterlaster.com/add-checklist.pdf">ADHD Diagnostic Checklist</a></li>
         <li><a href="https://files.rothrotterlaster.com/toilet-training.pdf">Toilet Training</a></li>
+        <li><a href="https://files.rothrotterlaster.com/starting-solids.pdf">Starting Solids</a></li>
     </ul>
 
     <h2>Well Visit Forms</h2>
