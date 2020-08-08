@@ -1,4 +1,5 @@
 import React from "react"
+import { Link } from "gatsby"
 
 import Layout from "../components/layout"
 import Image from "../components/image"
@@ -9,7 +10,7 @@ import NewsBox from "../components/newsbox"
 const IndexPage = () => (
   <Layout>
     <SEO title="Home" />
-    <p class="cta red"><a href="/covid19">Click here for an important message related to Coronavirus (COVID-19) and patients of Drs. Roth, Rotter and Laster</a></p>
+    <p class="cta red"><Link to="/covid19">Click here for an important message related to Coronavirus (COVID-19) and patients of Drs. Roth, Rotter and Laster</Link></p>
     <div style={{
       maxWidth: `450px`,
       width: `100%`,
