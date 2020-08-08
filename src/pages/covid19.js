@@ -60,7 +60,8 @@ const Covid19 = () => (
         Our patient portal,{" "}
         <a href="https://mychart.chppoc.org/rrl/">MyChart</a>, is the best way
         for care and communication. If you have not signed up for MyChart please
-        call our office at 617-232-2811 and our staff is happy to sign you up.
+        call our office at <a href="tel:6172322811">617-232-2811</a> and our
+        staff is happy to sign you up.
       </li>
       <li>
         Remember we have useful information on our website for{" "}
