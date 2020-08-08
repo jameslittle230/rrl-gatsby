@@ -1,5 +1,4 @@
 .header {
-  font-family: "Cabin", sans-serif;
   padding: 0 100px;
   margin-top: 2em;
   color: hsl(250, 8%, 14%);
@@ -34,31 +33,31 @@
 }
 
 .header p {
-    margin: 0;
-    font-size: 1.5em;
+  margin: 0;
+  font-size: 1.5em;
 }
 
 .header h1 {
-    margin: 0;
-    margin-bottom: 0.2em;
-    line-height: 1;
-    font-size: 3em;
+  margin: 0;
+  margin-bottom: 0.2em;
+  line-height: 1;
+  font-size: 3em;
 }
 
 @media (max-width: 820px) {
-    .header {
-        margin-top: 2rem;
-        margin-bottom: 1rem;
-        padding-left: 10px;
-        padding-right: 10px;
-        text-align: center;
-    }
+  .header {
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    padding-left: 10px;
+    padding-right: 10px;
+    text-align: center;
+  }
 }
 
 @media (max-width: 600px) {
-    .header {
-        font-size: 0.9em;
-    }
+  .header {
+    font-size: 0.9em;
+  }
 }
 
 .darkToggle {
