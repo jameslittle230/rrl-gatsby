@@ -123,7 +123,7 @@ class Nav extends React.Component {
               Vomiting &amp; Diarrhea
             </NavListItem>
             <NavListItem
-              to="https://files.rothrotterlaster.com/drug-diarrhea.pdf"
+              to="https://files.rothrotterlaster.com/drug-dosing.pdf"
               ext={true}
             >
               Medication Dosing
