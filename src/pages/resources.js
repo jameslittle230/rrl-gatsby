@@ -8,7 +8,7 @@ const ResourcesPage = () => (
     <SEO title="Resources" />
     <h1>Forms &amp; Resources</h1>
     <p>In this section you will find information about specific medical advice for basic problems, information about your child’s well visit form, and miscellaneous forms that you might need to download and print.</p>
-    <h2>Medical Information Forms</h2>
+    <h2>Medical Information</h2>
     <p>The following are forms regarding medical care. This information does not replace actual medical advice as given by a professional and is not specific to any one child or any one medical situation.</p>
 
     <ul>
@@ -25,6 +25,7 @@ const ResourcesPage = () => (
         <li><a href="https://files.rothrotterlaster.com/add-checklist.pdf">ADHD Diagnostic Checklist</a></li>
         <li><a href="https://files.rothrotterlaster.com/toilet-training.pdf">Toilet Training</a></li>
         <li><a href="https://files.rothrotterlaster.com/starting-solids.pdf">Starting Solids</a></li>
+        <li><a href="https://www.youtube.com/watch?v=Hl6vItGt4qQ">How to do your Strep Test at home (video)</a></li>
     </ul>
 
     <h2>Well Visit Forms</h2>
