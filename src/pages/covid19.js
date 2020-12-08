@@ -1,5 +1,4 @@
 import React from "react"
-import { Link } from "gatsby"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
@@ -94,16 +93,34 @@ const Covid19 = () => (
       If you return from travel for more than 24 hours to a place listed by the
       state as high-risk, before you can leave your home you must:
     </p>
-    <li>Quarantine for 14 days from your arrival back in Massachusetts. </li>
-    <li>
-      OR have a negative test taken no longer than 72 hours before arrival in
-      Massachusetts
-    </li>
-    <li>OR have a negative test after arrival in Massachusetts </li>
-    <li>
-      Children age 10 years and younger are not required to take a test if
-      traveling with an adult from their household.
-    </li>
+    <ul>
+      <li>Quarantine for 14 days from your arrival back in Massachusetts. </li>
+      <li>
+        OR have a negative test taken no longer than 72 hours before arrival in
+        Massachusetts
+      </li>
+      <li>OR have a negative test after arrival in Massachusetts </li>
+      <li>
+        Children age 10 years and younger are not required to take a test if
+        traveling with an adult from their household.
+      </li>
+    </ul>
+
+    <p>
+      <strong>Dec 3, 2020 update:</strong> The Massachusetts Department of
+      Public Health recently amended its guidance on the duration of quarantine
+      for those exposed to confirmed cases of COVID-19. As an alternative to the
+      full 14-day quarantine, an exposed individual may be released from
+      quarantine after 10 days if both of the following criteria are met:
+    </p>
+
+    <ul>
+      <li>The individual has no COVID-compatible symptoms</li>
+      <li>
+        A molecular test for SARS-CoV-2 obtained on day 8 or later after
+        exposure is negative
+      </li>
+    </ul>
 
     <h3>What does quarantine mean?</h3>
     <p>
