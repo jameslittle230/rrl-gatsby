@@ -11,7 +11,7 @@ const Covid19 = () => (
     <p>
       Please help stop the spread of COVID-19 and wear your mask to cover your
       nose and mouth. This applies to everyone age 2 years and older. When
-      socializing the ideal way to visit is small groups, out of doors, > 6 feet
+      socializing the ideal way to visit is small groups, out of doors, >6 feet
       apart, wearing masks.
     </p>
 
@@ -43,24 +43,33 @@ const Covid19 = () => (
       EXPOSURE: My child was exposed to someone who tested positive and feels
       fine
     </h3>
-    <ul>
       <p>
         If your child was in contact for 15 minutes or more in a 24 hour period
         less than six feet from someone then your child will need to quarantine
-        for 14 days and get a test.
+        for 10-14 days and get a test.
       </p>
+    <ul>
       <li>Do not do the test until 4 days have passed from the exposure.</li>
       <li>
-        Your child will have to quarantine for 14 days from the last exposure
-        even if the COVID-19 test is negative.
+        New information 12/3/2020: Exposed individual may be released from
+        quarantine after 10 days if BOTH of the following criteria are met:
       </li>
+      <ul>
+        <li>
+          The individual has no COVID-compatible symptoms for at least 24 hours{" "}
+        </li>
+        <li>
+          A COVID-19 PCR test obtained on day 8 or later after exposure is
+          negative
+        </li>
+      </ul>
     </ul>
 
     <h3>TESTING: How do I get my child tested?</h3>
     <p>
       If your child is sick, call the office and we will arrange a drive through
       test at Boston Children’s Hospital. If your child is not sick or has been
-      exposed, you can find a testing site at the following 2 websites:
+      exposed, you can find a testing site at the following websites:
     </p>
 
     <ul>
@@ -100,27 +109,15 @@ const Covid19 = () => (
         Massachusetts
       </li>
       <li>OR have a negative test after arrival in Massachusetts </li>
-      <li>
-        Children age 10 years and younger are not required to take a test if
-        traveling with an adult from their household.
-      </li>
     </ul>
 
     <p>
-      <strong>Dec 3, 2020 update:</strong> The Massachusetts Department of
-      Public Health recently amended its guidance on the duration of quarantine
-      for those exposed to confirmed cases of COVID-19. As an alternative to the
-      full 14-day quarantine, an exposed individual may be released from
-      quarantine after 10 days if both of the following criteria are met:
+      Please see the{" "}
+      <a href="https://www.mass.gov/info-details/covid-19-travel-order#quarantine-requirement-and-testing-options-">
+        Mass Department of Public Health quarantine requirements page
+      </a>{" "}
+      for more details:
     </p>
-
-    <ul>
-      <li>The individual has no COVID-compatible symptoms</li>
-      <li>
-        A molecular test for SARS-CoV-2 obtained on day 8 or later after
-        exposure is negative
-      </li>
-    </ul>
 
     <h3>What does quarantine mean?</h3>
     <p>
